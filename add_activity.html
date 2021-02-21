@@ -5,17 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>EDU</title>
+    <title>Add activity</title>
 </head>
 <body>
     <header>
         <nav>
-            <a class="active" href="#">Home</a>
-            <a href="friends.html">Friends</a>
-            <a href="/add_activity.html">Add Activity</a>
+            <a href="index.html">Home</a>
+            <a href="friends.html" active>Friends</a>
+            <a class="active" href="#">Add Activity</a>
         </nav>
     </header>
     <main>
+        <form action="" method="">
+            <label for="title">Title</label>
+            <br>
+            <input type="text" name="title" id="title" required>
+            <br>
+            <label for="description">Description</label>
+            <br>
+            <textarea name="description" id="description" cols="30" rows="10"></textarea>
+            <br>
+            <input type="submit" name="submit" id="submit" value="ADD">
+        </form>
         <div class="screen">
             <img src="/frog.png" alt="frog" id="frog">
         </div>
