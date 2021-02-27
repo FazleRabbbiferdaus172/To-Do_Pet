@@ -39,6 +39,9 @@ nav a{
 
 .screen {
     grid-area: scrn;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;;
 }
 
 .feed {
@@ -78,6 +81,11 @@ nav a{
     border-radius: 5px;
 }
 
+.screen img {
+    max-width: 20%;
+    height: auto;
+}
+
 .btn {
     box-sizing: border-box;
     background-color: rgb(26, 202, 93);
@@ -87,16 +95,10 @@ nav a{
 }
 
 form {
-    border: 1px solid rgba(255,255,255,0.2);
-    border-radius: 9px;
-    position: fixed;
-    background-color: rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(5px);
-    right: 40%;
-    width: 300px;
-    height: 50%;
+    grid-area: 3 / 2 / span 1 / span 2;
     z-index: 10;
 }
+
 label {
     color: blanchedalmond;
     font-size: 1.5rem;
@@ -129,10 +131,14 @@ input[type=submit] {
     border-radius: 50%;
 }
 
+.container{
+    grid-area: 2 / 1 / span 2 / span 4;
+    display: grid;
+    grid-template-rows: 170px;
+    grid-auto-rows: 170px;
+}
+
 .posts {
-    border: 1px solid rgba(255,255,255,0.2);
-    background-color: rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(5px);
     overflow: hidden;
     width: 100%;
     height: auto;
